@@ -1,0 +1,23 @@
+These functions are used by 'Mail Script.ps1'
+Moving or renaming the files can break the script!
+
+Original location:
+\\mschctechp3\SDTools\mailuser\MailScriptFunctions
+
+
+In case the Mail Script gets overwritten with an older copy again:
+# Importing helper functions
+$HELPER_FILE_PATH = $FILE_PATH + "\MailScriptFunctions"
+. $HELPER_FILE_PATH\Set-MBXPermission.ps1
+. $HELPER_FILE_PATH\Get-Permissions.ps1
+. $HELPER_FILE_PATH\Set-CLDPermission.ps1
+. $HELPER_FILE_PATH\Change-SentItems.ps1
+. $HELPER_FILE_PATH\Create-NewMailbox.ps1
+
+. $HELPER_FILE_PATH\Get-PermissionLevels.ps1
+. $HELPER_FILE_PATH\Select-PermissionLevel.ps1
+. $HELPER_FILE_PATH\Check-PersonalCalendars.ps1
+. $HELPER_FILE_PATH\Change-MailboxType.ps1
+
+. $HELPER_FILE_PATH\Set-AccountHideStatus.ps1
+. $HELPER_FILE_PATH\Display-ErrorMessage.ps1
